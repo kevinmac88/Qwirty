@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  background-color: blue;
+  padding: 1rem;
+  list-style: none;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.footer a {
+  color: white;
+}
+
+.customercarelist {
+  list-style: none;
+}
+
+section {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+@media (max-width: 650px) {
+  .footer {
+    flex-direction: column; /* stack sections */
+    align-items: center; /* center the sections themselves */
+    gap: 2rem; /* space between sections */
+    text-align: center; /* center text inside */
+  }
+
+  .footer section {
+    margin: 0;
+    width: 100%;
+  }
+
+  .footer menu {
+    padding: 0;
+  }
+
+  .footer li {
+    text-align: center; /* center each list item */
+  }
+}
+
+@media (max-width: 650px) {
+  .footer h2 {
+    text-align: center; /* center the “Customer Care”, “Sales”, etc. */
+    margin: 0 0 0.5rem; /* tidy default margins */
+  }
+}

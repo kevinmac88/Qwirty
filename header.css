@@ -1,0 +1,82 @@
+* {
+  font-family: Roboto, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: blue;
+}
+
+.topmenuleft,
+.topmenuright {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  color: white;
+  padding: 0px;
+  align-items: center;
+}
+
+.topmenuleft {
+  justify-content: flex-start;
+}
+.topmenuright {
+  justify-content: flex-end;
+}
+
+.topmenuright a,
+.topmenuleft a {
+  color: white;
+}
+
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logomenu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10%;
+  padding: 10px;
+  /* font-size: 1rem; */
+  color: blue;
+  gap: 20px;
+}
+
+.finance {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+#product_search {
+  flex: 1;
+}
+
+.page-container {
+  float: left;
+}

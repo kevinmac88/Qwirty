@@ -1,0 +1,75 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  padding-left: 3rem;
+  gap: 0.5rem;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.products .product {
+  min-width: 0; /* allow grid items to shrink */
+  overflow: hidden; /* keep content inside */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  padding: 0.25rem;
+  box-sizing: border-box;
+}
+
+.products .product * {
+  white-space: normal; /* reset the global nowrap */
+  overflow-wrap: break-word; /* break long words */
+  word-break: break-word; /* ensure really long strings wrap */
+}
+
+h2 {
+  color: white;
+  padding: 5px;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  outline: solid red;
+}
+
+.pics {
+  margin: 0; /* remove default figure spacing */
+  flex: 0 0 auto; /* keep figure’s natural size */
+  display: flex;
+  justify-content: center; /* center image if it’s smaller */
+  align-items: center;
+}
+
+.pics img {
+  width: 100%; /* fill the card’s width */
+  height: 150px; /* fixed height for all images */
+  object-fit: cover; /* crop to fill, keep aspect ratio */
+  border-radius: 4px; /* optional rounded corners */
+  display: block;
+}
+
+.price {
+  display: flex;
+  gap: 1ch;
+  background-color: blue;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  align-items: center;
+  margin-top: auto; /* pushes price to the bottom of the flex column */
+  justify-content: space-between;
+}
+
+.price a {
+  color: white;
+}
+
+h3 {
+  color: white;
+  padding: 5px;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  outline: solid red;
+}
